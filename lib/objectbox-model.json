@@ -1,0 +1,148 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:4484461767964428852",
+      "lastPropertyId": "9:143324858580862082",
+      "name": "UsuarioEntity",
+      "properties": [
+        {
+          "id": "1:6760846967862999854",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2273831218288493910",
+          "name": "displayname",
+          "type": 9
+        },
+        {
+          "id": "3:2403059981196179684",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "4:1523177995019256940",
+          "name": "age",
+          "type": 6
+        },
+        {
+          "id": "5:4977964959656072250",
+          "name": "phonernumber",
+          "type": 9
+        },
+        {
+          "id": "6:5794730967115467398",
+          "name": "photourl",
+          "type": 9
+        },
+        {
+          "id": "7:4055990345448853871",
+          "name": "sex",
+          "type": 9
+        },
+        {
+          "id": "8:2204971479375200971",
+          "name": "createdtime",
+          "type": 9
+        },
+        {
+          "id": "9:143324858580862082",
+          "name": "uuid",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:7462188824054725120",
+      "lastPropertyId": "3:2237377387434605463",
+      "name": "EnfermedadEntity",
+      "properties": [
+        {
+          "id": "1:6168001472476535412",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1937681781881578315",
+          "name": "nombre",
+          "type": 9
+        },
+        {
+          "id": "3:2237377387434605463",
+          "name": "usuarioEnfId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:6844006954087778289",
+          "relationTarget": "UsuarioEntity"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:809567209015798376",
+      "lastPropertyId": "8:5636303409999568361",
+      "name": "MedicamentosEntity",
+      "properties": [
+        {
+          "id": "1:4199317018162568451",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3742963238714794670",
+          "name": "nombre",
+          "type": 9
+        },
+        {
+          "id": "3:1989761111212446536",
+          "name": "cantidad",
+          "type": 6
+        },
+        {
+          "id": "4:8380747119497833173",
+          "name": "dosis",
+          "type": 6
+        },
+        {
+          "id": "6:2200182922886430633",
+          "name": "diasSemana",
+          "type": 30
+        },
+        {
+          "id": "7:8639461344879859716",
+          "name": "hora",
+          "type": 30
+        },
+        {
+          "id": "8:5636303409999568361",
+          "name": "enfermedadEnfId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "2:6435384468624342669",
+          "relationTarget": "EnfermedadEntity"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:809567209015798376",
+  "lastIndexId": "2:6435384468624342669",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    6785213226251786310
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}
